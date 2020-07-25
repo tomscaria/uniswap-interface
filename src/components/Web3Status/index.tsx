@@ -21,7 +21,7 @@ import { RowBetween } from '../Row'
 import { shortenAddress } from '../../utils'
 import { useAllTransactions } from '../../state/transactions/hooks'
 import { NetworkContextName } from '../../constants'
-import { injected, walletconnect, walletlink, fortmatic, portis } from '../../connectors'
+import { injected, walletconnect, walletlink, fortmatic } from '../../connectors'
 import Loader from '../Loader'
 
 const IconWrapper = styled.div<{ size?: number }>`
@@ -175,13 +175,7 @@ export default function Web3Status() {
           <img src={FortmaticIcon} alt={''} />
         </IconWrapper>
       )
-    } else if (connector === portis) {
-      return (
-        <IconWrapper size={16}>
-          <img src={PortisIcon} alt={''} />
-        </IconWrapper>
-      )
-    }
+    } 
   }
 
   function getWeb3Status() {

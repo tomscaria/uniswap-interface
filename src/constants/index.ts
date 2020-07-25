@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@uniswap/sdk'
 
-import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
+import { fortmatic, injected, walletconnect, walletlink } from '../connectors'
 
 export const ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
 
@@ -113,15 +113,7 @@ export const SUPPORTED_WALLETS =
             color: '#6748FF',
             mobile: true
           },
-          Portis: {
-            connector: portis,
-            name: 'Portis',
-            iconName: 'portisIcon.png',
-            description: 'Login using Portis hosted wallet',
-            href: null,
-            color: '#4A6C9B',
-            mobile: true
-          }
+          
         }
       }
 
