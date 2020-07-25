@@ -296,11 +296,7 @@ export default function Swap() {
                       color={currencies[Field.INPUT] && currencies[Field.OUTPUT] ? theme.primary1 : theme.text2}
                     />
                   </ArrowWrapper>
-                  {recipient === null && !showWrap ? (
-                    <LinkStyledButton id="add-recipient-button" onClick={() => onChangeRecipient('')}>
-                      + Add a send (optional)
-                    </LinkStyledButton>
-                  ) : null}
+      
                 </AutoRow>
               </AutoColumn>
             </CursorPointer>
